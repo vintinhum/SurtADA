@@ -19,20 +19,20 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         
         textureAtlas = SKTextureAtlas(named: "images")
-        
-        NSLog("\(textureAtlas.textureNames)")
-        
-        for i in 1...textureAtlas.textureNames.count {
+            
+            NSLog("\(textureAtlas.textureNames)")
+            
+            for i in 1...textureAtlas.textureNames.count {
             
             var name = "Ativo_\(i).png"
             textureArray.append(SKTexture(imageNamed: name))
-        }
-        
-        cookieSprite = SKSpriteNode(imageNamed: textureAtlas.textureNames[2] as! String)
-        
-        cookieSprite.size = CGSize(width: 398, height: 398)
-        cookieSprite.position = CGPoint(x: -25, y: 0)
-        self.addChild(cookieSprite)
+            }
+            
+            cookieSprite = SKSpriteNode(imageNamed: textureAtlas.textureNames[2] as! String)
+            
+            cookieSprite.size = CGSize(width: 398, height: 398)
+            cookieSprite.position = CGPoint(x: -25, y: 0)
+            self.addChild(cookieSprite)
         
         
     }

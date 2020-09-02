@@ -1,10 +1,10 @@
-//
-//  Cookie_AnimationUITests.swift
-//  Cookie AnimationUITests
-//
-//  Created by Vítor Bárrios Luís de Albuquerque on 31/08/20.
-//  Copyright © 2020 Vítor Bárrios Luís de Albuquerque. All rights reserved.
-//
+
+  //Cookie_AnimationUITests.swift
+ // Cookie AnimationUITests
+
+  //Created by Vítor Bárrios Luís de Albuquerque on 31/08/20.
+ /// Copyright © 2020 Vítor Bárrios Luís de Albuquerque. All rights reserved.
+
 
 import XCTest
 
