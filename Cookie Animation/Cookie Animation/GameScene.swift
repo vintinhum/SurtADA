@@ -12,9 +12,10 @@ import GameplayKit
 class GameScene: SKScene {
     
     var cookieSprite = SKSpriteNode()
-    
+    var progressBar = IMProgressBar(emptyImageName: "BotaoCoitoSorte.png", filledImageName: "BotaoCoitoSorte.png")
     var textureAtlas = SKTextureAtlas()
     var textureArray = [SKTexture]()
+    var labelLoading = SKLabelNode()
     
     override func didMove(to view: SKView) {
         
@@ -39,7 +40,15 @@ class GameScene: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        cookieSprite.run(SKAction.animate(with: textureArray, timePerFrame: 0.1))
+        cookieSprite.run(SKAction.animate(with: textureArray, timePerFrame: 0.1)){
+            self.scene?.addChild(self.progressBar)
+            self.scene?.addChild(self.labelLoading)
+            
+            
+        }
+        
+        //
+       //let iMProgressBar = IMProgressBar()
     }
     
     

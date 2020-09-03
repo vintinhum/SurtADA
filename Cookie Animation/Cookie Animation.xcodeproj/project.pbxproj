@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		500ED2B424FFCFFB0047F4AF /* My Movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 500ED2B324FFCFFB0047F4AF /* My Movie.mp4 */; };
+		500ED2B625011EDE0047F4AF /* BotaoCoitoSorte.png in Resources */ = {isa = PBXBuildFile; fileRef = 500ED2B525011EDD0047F4AF /* BotaoCoitoSorte.png */; };
+		500ED2B82501234D0047F4AF /* LoadingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500ED2B72501234D0047F4AF /* LoadingScene.swift */; };
+		500ED2BA250138080047F4AF /* SurtoVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 500ED2B9250138080047F4AF /* SurtoVideo.mp4 */; };
 		50D3B86624FE66B500C78F36 /* TelaInicial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D3B86524FE66B500C78F36 /* TelaInicial.swift */; };
 		E568622924FD184700FDFB1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568622824FD184700FDFB1B /* AppDelegate.swift */; };
 		E568622B24FD184700FDFB1B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E568622A24FD184700FDFB1B /* GameScene.sks */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		500ED2B324FFCFFB0047F4AF /* My Movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "My Movie.mp4"; sourceTree = "<group>"; };
+		500ED2B525011EDD0047F4AF /* BotaoCoitoSorte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BotaoCoitoSorte.png; sourceTree = "<group>"; };
+		500ED2B72501234D0047F4AF /* LoadingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScene.swift; sourceTree = "<group>"; };
+		500ED2B9250138080047F4AF /* SurtoVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SurtoVideo.mp4; sourceTree = "<group>"; };
 		50D3B86524FE66B500C78F36 /* TelaInicial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicial.swift; sourceTree = "<group>"; };
 		E568622524FD184600FDFB1B /* Cookie Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cookie Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E568622824FD184700FDFB1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +91,9 @@
 		500ED2B224FFCEEF0047F4AF /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				500ED2B525011EDD0047F4AF /* BotaoCoitoSorte.png */,
 				500ED2B324FFCFFB0047F4AF /* My Movie.mp4 */,
+				500ED2B9250138080047F4AF /* SurtoVideo.mp4 */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 				E568623224FD184700FDFB1B /* Main.storyboard */,
 				E568623724FD184900FDFB1B /* LaunchScreen.storyboard */,
 				E568623A24FD184900FDFB1B /* Info.plist */,
+				500ED2B72501234D0047F4AF /* LoadingScene.swift */,
 			);
 			path = "Cookie Animation";
 			sourceTree = "<group>";
@@ -251,7 +260,9 @@
 			files = (
 				E568623424FD184700FDFB1B /* Main.storyboard in Resources */,
 				500ED2B424FFCFFB0047F4AF /* My Movie.mp4 in Resources */,
+				500ED2B625011EDE0047F4AF /* BotaoCoitoSorte.png in Resources */,
 				E568622B24FD184700FDFB1B /* GameScene.sks in Resources */,
+				500ED2BA250138080047F4AF /* SurtoVideo.mp4 in Resources */,
 				E568623924FD184900FDFB1B /* LaunchScreen.storyboard in Resources */,
 				E568622D24FD184700FDFB1B /* Actions.sks in Resources */,
 			);
@@ -278,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500ED2B82501234D0047F4AF /* LoadingScene.swift in Sources */,
 				E568622F24FD184700FDFB1B /* GameScene.swift in Sources */,
 				E568623124FD184700FDFB1B /* GameViewController.swift in Sources */,
 				E568622924FD184700FDFB1B /* AppDelegate.swift in Sources */,

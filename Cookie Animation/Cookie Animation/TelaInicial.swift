@@ -18,7 +18,7 @@ class TelaInicialScene: SKScene {
     let backgroundImageW = SKSpriteNode(imageNamed: "WelcomeImage")
     let okButton = SKSpriteNode()
     let okText = SKLabelNode(fontNamed: "SF Compact Display")
-    let animation = SKVideoNode(fileNamed:"My Movie.mp4")
+    let animation = SKVideoNode(fileNamed:"SurtoVideo.mp4")
     
     
     override func didMove(to view: SKView) {
@@ -26,27 +26,31 @@ class TelaInicialScene: SKScene {
         self.backgroundColor = .white
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         
-        animation.position = CGPoint(x: frame.midX, y: frame.midY)
-        animation.size = CGSize(width: 800, height: 370)
+        animation.position = CGPoint(x: 0, y: 30)
+        animation.size = CGSize(width: 896, height: 417)
         self.addChild(animation)
         animation.play()
+        okButton.isHidden = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 12){
+            self.okButton.isHidden = false
+        }
         
         
-        okButton.run(SKAction.setTexture(SKTexture.init(imageNamed: "imagem1")))
+        okButton.run(SKAction.setTexture(SKTexture.init(imageNamed: "BotaoCoitoSorte.png")))
         okButton.name = "OkBtn"
-        okButton.size = CGSize(width: 100, height: 70)
+        okButton.size = CGSize(width: 180, height: 130)
         okButton.zPosition = 0
-        okButton.position = CGPoint(x: 310, y: -145)
+        okButton.position = CGPoint(x: 0, y: -130)
         self.addChild(okButton)
         
-        okText.text = "OK"
-        okText.fontColor = UIColor.black
-        okText.verticalAlignmentMode = .center
-        okText.position = CGPoint(x: 0, y: 0)
-        okText.fontSize = 25
-        okText.name = "OkBtn"
-        okText.zPosition = 1
-        okButton.addChild(okText)
+//        okText.text = "OK"
+//        okText.fontColor = UIColor.black
+//        okText.verticalAlignmentMode = .center
+//        okText.position = CGPoint(x: 0, y: 0)
+//        okText.fontSize = 25
+//        okText.name = "OkBtn"
+//        okText.zPosition = 1
+//        okButton.addChild(okText)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
